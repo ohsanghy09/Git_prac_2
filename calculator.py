@@ -1,3 +1,7 @@
+def add(a, b):
+    return a + b
+
+
 def main():
 
     result = 0 
@@ -11,6 +15,11 @@ def main():
     except ValueError:
         print("Invalid input.")
         return
+    
+
+    if op == "+":
+        result = add(a, b)
+
 
     print(f"Result: {result}")
 
