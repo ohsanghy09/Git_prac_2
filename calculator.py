@@ -1,10 +1,18 @@
+# calculator.py
 def add(a, b):
     return a + b
 
 
-def main():
+def subtract(a, b):
+    pass
 
-    result = 0 
+def multiply(a, b):
+    pass
+
+def divide(a, b):
+    pass
+
+def main():
     print("=== Calculator ===")
     print("Operator: +, -, *, /")
 
@@ -15,11 +23,18 @@ def main():
     except ValueError:
         print("Invalid input.")
         return
-    
 
     if op == "+":
         result = add(a, b)
-
+    elif op == "-":
+        result = subtract(a, b)
+    elif op == "*":
+        result = multiply(a, b)
+    elif op == "/":
+        result = divide(a, b)
+    else:
+        print("Invalid operator.")
+        return
 
     print(f"Result: {result}")
 
