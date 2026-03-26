@@ -1,13 +1,13 @@
 # calculator.py
 def add(a, b):
-    pass
+    return a + b
 
 
 def subtract(a, b):
-    return a-b
+    return a - b
 
 def multiply(a, b):
-    pass
+    return a * b
 
 def divide(a, b):
     pass
